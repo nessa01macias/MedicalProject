@@ -1,8 +1,9 @@
 import abc
 
+
 # abc metaclass makes the class an abstractClass so we cannot create instances of it
 # and the child class have a cumpulsion of having those methods inside them
-class MedicalDocParser(metaclass= abc.ABCMeta):
+class MedicalDocParser(metaclass=abc.ABCMeta):
     def __init__(self, text):
         self.text = text
 
