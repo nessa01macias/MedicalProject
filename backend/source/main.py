@@ -26,5 +26,5 @@ def extract(file_path: str, file_type: str):
 
 
 if __name__ == "__main__":
-    data = extract(r"C:\Users\nessa\MedicalProject\backend\resources\prescription\pre_2.pdf", "prescription")
+    data = extract(r"C:\Users\nessa\MedicalProject\backend\resources\patient_details\pd_1.pdf", "patient_details")
     print(data)
