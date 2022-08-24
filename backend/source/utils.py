@@ -1,8 +1,6 @@
 import cv2
 # using computer-vision to pre-process the imagen
 import numpy as np
-
-
 # for array-handling
 
 def preprocessing_images(image):
