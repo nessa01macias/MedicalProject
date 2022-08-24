@@ -1,5 +1,7 @@
 from backend.source.parser_perscription_class import PrescriptionParser
 import pytest
+
+
 @pytest.fixture()
 def example_text1():
     text1 = """Name: Marta Sharapova Date: 5/11/2022
@@ -14,6 +16,7 @@ def example_text1():
     """
     return text1
 
+
 # unit tests for checking all the functionalities of the prescription class
 def test_get_name(example_text1):
     assert example_text1.get_general("patient_name") == "Marta Sharapova"
@@ -24,7 +27,8 @@ def test_get_address(example_text1):
 
 
 def test_get_instruction():
-    assert example_text1.get_general("patient_instruction") == 'Prednisone, Taper 5 mg every 3 days,\nFinish in 2.5 weeks a\nLialda - take 2 pill everyday for 1 month'
+    assert example_text1.get_general(
+        "patient_instruction") == 'Prednisone, Taper 5 mg every 3 days,\nFinish in 2.5 weeks a\nLialda - take 2 pill everyday for 1 month'
 
 
 def test_get_prescription(example_text1):
