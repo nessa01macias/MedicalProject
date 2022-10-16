@@ -1,5 +1,4 @@
 # MedicalProject
 Application based in Python that extracts information from pictures using computer vision.
-The program has automated the extration of patient's details, that are extracted from a picture of medical records, processed and then returned as normal text.
-It uses an fastAPI that handles the parsed information. <br>
-{project not finished}
+The program has automated the extraction of patient's details, that are gotten from a picture of medical records, processed and then returned as normal text.
+It uses fastAPI from Python as backend in order to retrieve the parsed information. 
